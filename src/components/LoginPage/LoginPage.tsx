@@ -6,15 +6,15 @@ import styles from './LoginPage.module.css';
 
 export default function LoginPage() {
     const googleLogin = () => {
-        window.open('http://localhost:4000/auth/google', "_self");
+        window.open('https://milk4tea-oauth.herokuapp.com/auth/google', "_self");
     }
 
     const githubLogin = () => {
-        window.open('http://localhost:4000/auth/github', "_self");
+        window.open('https://milk4tea-oauth.herokuapp.com/auth/github', "_self");
     }
 
     const twitterLogin = () => {
-        window.location.href = "http://localhost:4000/auth/twitter";
+        window.location.href = "https://milk4tea-oauth.herokuapp.com/auth/twitter";
     }    
 
     return (

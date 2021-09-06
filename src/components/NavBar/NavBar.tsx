@@ -7,7 +7,7 @@ import { myContext } from '../Context';
 export default function NavBar() {
     const userObject = useContext(myContext);
     const logout = () => {
-        axios.get("http://localhost:4000/auth/logout", { 
+        axios.get("https://milk4tea-oauth.herokuapp.com/auth/logout", { 
             withCredentials: true}
             ).then(res => {
                 if (res.data === "done") {
